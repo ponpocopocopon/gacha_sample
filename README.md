@@ -9,10 +9,12 @@
 モデルにincludeします。
 set_gacha_weight_columnに重みを格納したカラムを指定します(デフォルトはweight)
 
+```ruby:gacha.rb
 class Gacha < ActiveRecord::Base
   include GachaSample
-  set_gacha_weight_column :weight_hi
+  set_gacha_weight_column :weight_rare
 end
+```
 
 ## 例
 
